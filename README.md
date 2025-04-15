@@ -23,13 +23,27 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
+```
+from django.contrib import admin
+from .models import Movie,MovieAdmin
+admin.site.register(Movie,MovieAdmin)
 
+from django.db import models
+from django.contrib import admin
+class Movie(models.Model):
+    mid=models.IntegerField()
+    mname=models.CharField(max_length=100)
+    collection=models.IntegerField()
+    year=models.IntegerField()
+    rating=models.FloatField()
 
+class MovieAdmin(admin.ModelAdmin):
+    list_display=('mid','mname','collection','year','rating')
+```
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
-
+![Screenshot 2025-04-11 145144](https://github.com/user-attachments/assets/e4ca7d33-69a3-4e98-824e-a4fab7e0684a)
 
 ## RESULT
 Thus the program for creating movies database using ORM hass been executed successfully
