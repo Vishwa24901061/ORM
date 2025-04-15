@@ -45,5 +45,8 @@ class MovieAdmin(admin.ModelAdmin):
 
 ![Screenshot 2025-04-11 145144](https://github.com/user-attachments/assets/e4ca7d33-69a3-4e98-824e-a4fab7e0684a)
 
+![Screenshot 2025-04-15 112743](https://github.com/user-attachments/assets/7c57f646-ccfa-4346-a1d2-4d1b03242822)
+
+
 ## RESULT
 Thus the program for creating movies database using ORM hass been executed successfully
